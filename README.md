@@ -8,7 +8,11 @@
 - Spring Boot 3 (Spring Web, Spring Data JPA, Validation)
 - MySQL 8
 
-## Como rodar localmente
-1. Crie o banco de dados no MySQL:
-   ```sql
-   CREATE DATABASE tarefasdb;
+### Propriedades:
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/tarefasdb?useSSL=false&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=SUA_SENHA_AQUI
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
